@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="out.css">
+</head>
+<body>
+  <div class="bogo-container">
+    <h1>YAY! It's BOGO</h1>
+    <form id="bogo-form">
+      <!-- Option 1 -->
+      <div class="bogo-option">
+        <label>
+          <input type="radio" name="unit-selection" value="1" data-price="10" checked>
+          <div class="bogo-option-content">
+            <div>
+              <span>1 Unit</span>
+              <span class="discount">10% Off</span>
+            </div>
+            <div>Standard Price</div>
+            <div class="price">
+              <span>$10.00 USD</span>
+              <span class="original-price">$24.00 USD</span>
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <!-- Option 2 -->
+      <div class="bogo-option popular">
+        <label>
+          <input type="radio" name="unit-selection" value="2" data-price="18">
+          <div class="bogo-option-content">
+            <div>
+              <span>2 Unit</span>
+              <span class="discount">20% Off</span>
+            </div>
+            <div class="most-popular">MOST POPULAR</div>
+            <div class="price">
+              <span>$18.00 USD</span>
+              <span class="original-price">$24.00 USD</span>
+            </div>
+            <div class="size-color">
+              <div>
+                <label>#1</label>
+                <select name="size1">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <select name="color1">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Red</option>
+                </select>
+              </div>
+              <div>
+                <label>#2</label>
+                <select name="size2">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+                <select name="color2">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Red</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <!-- Option 3 -->
+      <div class="bogo-option">
+        <label>
+          <input type="radio" name="unit-selection" value="3" data-price="24">
+          <div class="bogo-option-content">
+            <div>
+              <span>3 Unit</span>
+              <span class="discount">30% Off</span>
+            </div>
+            <div class="price">
+              <span>$24.00 USD</span>
+              <span class="original-price">$24.00 USD</span>
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <!-- Footer -->
+      <div class="bogo-footer">
+        <div class="free-delivery">Free Delivery</div>
+        <div class="total-price">Total : $<span id="total-price">18.00</span> USD</div>
+      </div>
+
+      <button type="submit" class="add-to-cart">+ Add to Cart</button>
+    </form>
+    <footer>@ Powered by Pumper</footer>
+  </div>
+  <script src="out.js"></script>
+</body>
+</html>
